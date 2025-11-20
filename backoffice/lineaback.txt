@@ -1,1 +1,0 @@
-$mysqli = new mysqli("192.168.5.50", "sebastian.cal", "55933151", "sebastian_cal");
