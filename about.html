@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VoleuCoorp - About</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-image: url(imgs/imagenfondo.png);
+      color: #333;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 80px;
+      padding: 20px;
+      position: relative;
+      flex-direction: column;
+    }
+
+    .banner {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+    }
+
+    .banner h2 {
+      color: #2c3e50;
+      font-size: 1.5em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 15px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #2c3e50;
+      padding: 8px 16px;
+      border-radius: 6px;
+      border: 1px solid transparent;
+      transition: background-color 0.3s ease, border 0.3s ease;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      background-color: #e6ecf1;
+      border-color: #b5c6d3;
+    }
+
+    .container {
+      max-width: 800px;
+      background-color: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    h1 {
+      color: #2c3e50;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .login-button {
+    display: inline-block;
+    color: #2c3e50;
+    padding: 10px 40px;
+    border: 1px solid #2c3e50;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+    }
+
+    .login-button:hover {
+    background-color: #2c3e50;
+    color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="banner">
+    <h2>VoleuCoorp</h2>
+    <div class="nav-links">
+      <a href="principal.php">Inicio</a>
+      <a href="frontend/frontend.php">Miembros</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>Bienvenido a VoleuCoorp</h1>
+    <p><strong>VoleuCoorp</strong> es una cooperativa solidaria orientada a brindar soluciones habitacionales accesibles para todos los ciudadanos. Nuestro compromiso es facilitar el acceso a <strong>lotes a precios justos</strong> y ofrecer un amplio abanico de opciones de viviendas, diseñadas para adaptarse a las necesidades de cada familia.</p>
+
+    <p>Formar parte de VooleuCoop es apostar por un futuro compartido, donde la cooperación y la solidaridad son la base de cada proyecto.</p>
+
+    <p>📋 Ingresá con tus datos para acceder a tu espacio personal y consultar el estado de tu solicitud, tus aportes y mucho más.</p>
+
+    <a href="registro.php" class="login-button">Registrarse</a>
+  </div>
+
+</body>
+</html>

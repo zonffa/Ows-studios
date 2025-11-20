@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  min-height: 100vh;
+}
+
+.logo-backoffice {
+  width: 100px;
+  margin: 0 auto 1.5rem;
+  display: block;
+  filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.1));
+  transition: transform 0.3s;
+}
+
+.logo-backoffice:hover {
+  transform: scale(1.1);
+}
+
+.sidebar {
+  width: 240px;
+  background-color: #121212;
+  padding: 2rem 1.5rem;
+  position: fixed;
+  height: 100vh;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar h2 {
+  color: #2c3e50;
+  font-weight: 600;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  margin: 1rem 0;
+}
+
+.sidebar a {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 0.5rem;
+  display: block;
+  border-radius: 6px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: #2a2a2a;
+  color: #2c3e50;
+}
+
+.dashboard {
+  margin-left: 240px;
+  padding: 2rem;
+  width: 100%;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #444;
+  padding-bottom: 0.5rem;
+}
+
+.card {
+  background-color: #2a2a2a;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.01);
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.admin-table th,
+.admin-table td {
+  padding: 0.75rem;
+  border: 1px solid #444;
+  text-align: left;
+}
+
+.admin-table th {
+  background-color: #3a3a3a;
+  color: #f0f0f0;
+}
+
+.admin-table td {
+  background-color: #262626;
+}
+
+.admin-table a {
+  color: #89b3ff;
+  text-decoration: underline;
+}
+
+.admin-table button {
+  padding: 0.3rem 0.6rem;
+  margin-right: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  color: #fff;
+}
+
+.btn-aceptar {
+  background-color: #4caf50;
+}
+
+.btn-rechazar {
+  background-color: #d32f2f;
+}
+
+/* ==============================
+   TABLAS DARK PARA EXONERACIONES Y DOCUMENTOS
+   ============================== */
+
+.table-docs,
+.table-exo {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.table-docs th,
+.table-docs td,
+.table-exo th,
+.table-exo td {
+  padding: 0.75rem;
+  border: 1px solid #444;
+  text-align: left;
+}
+
+.table-docs th,
+.table-exo th {
+  background-color: #3a3a3a;   /* mismo header que admin-table */
+  color: #f0f0f0;
+}
+
+.table-docs td,
+.table-exo td {
+  background-color: #262626;    /* mismo body que admin-table */
+  color: #f0f0f0;
+}
+
+/* zebra suave */
+.table-docs tbody tr:nth-child(even),
+.table-exo tbody tr:nth-child(even) {
+  background-color: #222;
+}
+
+/* links dentro de esas tablas */
+.table-docs a,
+.table-exo a {
+  color: #89b3ff;
+  text-decoration: underline;
+}
+
+/* badge para nombre de archivo */
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #1b1b1b;
+  color: #f0f0f0;
+  border: 1px solid #444;
+  font-size: 0.8rem;
+}
+
+/* botón genérico (Abrir / Ver archivo) */
+a.btn {
+  display: inline-block;
+  padding: 0.35rem 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background: #111827;
+  color: #f0f0f0;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+a.btn:hover {
+  background: #1f2933;
+  border-color: #666;
+}
+
+/* ==============================
+   SELECTS Y FORMULARIOS
+   ============================== */
+
+.card select,
+.form-asignar select {
+  background-color: #262626;
+  color: #f0f0f0;
+  border: 1px solid #444;
+  border-radius: 6px;
+  padding: 0.35rem 0.6rem;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.card select:focus,
+.form-asignar select:focus {
+  border-color: #2c3e50;
+  box-shadow: 0 0 0 1px rgba(44, 62, 80, 0.7);
+}
+
+.form-asignar button {
+  padding: 0.35rem 0.8rem;
+  margin-left: 0.5rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.85rem;
+  background-color: #4caf50;
+  color: #fff;
+}
+
+/* ==============================
+   PILLS DE ESTADO EXONERACIONES
+   ============================== */
+
+.estado-pill {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.estado-pendiente {
+  background: #fff4ce;
+  color: #996f00;
+}
+
+.estado-aprobada {
+  background: #1b5e20;
+  color: #d7f5df;
+}
+
+.estado-rechazada {
+  background: #7f1d1d;
+  color: #ffe5e5;
+}
